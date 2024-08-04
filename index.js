@@ -11,6 +11,10 @@ app.use(morgan("dev"));
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.json({
+    message: "Welcome to the KomikScrapper API",
+});
 /// Use Komikcast route
 app.use("/api/komikcast/", require("./routes/manga-route.js"));
 
