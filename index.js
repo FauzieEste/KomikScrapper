@@ -11,7 +11,7 @@ app.use(morgan("dev"));
 
 app.use(express.json());
 
-app.get('/', (_, res) => res.status(200).json({ status: 'Ok', message: 'Otakudesu unofficial API, made by rzkfyn with <3' }));
+app.get('/', (_, res) => res.status(200).json({ status: 'MANTAP', message: 'Poji poji apa yang poji' }));
 /// Use Komikcast route
 app.use("/api/komikcast/", require("./routes/manga-route.js"));
 
